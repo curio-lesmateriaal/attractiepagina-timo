@@ -26,6 +26,9 @@ if(!isset($_SESSION['user_id']))
 <body>
 
     <?php require_once '../../header.php'; ?>
+
+
+    
     <div class="container">
 
         <h2>Nieuwe attractie</h2>
@@ -54,6 +57,14 @@ if(!isset($_SESSION['user_id']))
                 <label for="fast_pass">FAST PASS:</label>
                 <input type="checkbox" name="fast_pass" id="fast_pass">
                 <label for="fast_pass">Voor deze attractie is een FAST PASS nodig.</label>
+            </div>
+            <div class="form-group">
+                <label for="min_length">min length</label>
+                <input type="min_length" name="min_length" id="min_length">
+            </div>
+            <div class="form-group">
+                <label for="description">min description</label>
+                <input type="description" name="description" id="description">
             </div>
 
             <input type="submit" value="Attractie aanmaken">
